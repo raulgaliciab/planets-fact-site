@@ -11,7 +11,9 @@ export const Navbar = () => {
 
         {
           planets.map( planet => (
-            <NavLink to={planet.toLowerCase()}>
+            <NavLink
+              key={planet.toLowerCase()}
+              to={planet.toLowerCase()}>
               {planet.toUpperCase()}
             </NavLink>
           ))

@@ -1,5 +1,22 @@
+import { useParams } from 'react-router';
+import data from '../data/data.json';
+
 export const PlanetPage = () => {
+
+  const { planetName } = useParams();
+  const name = planetName.charAt(0).toUpperCase() + planetName.slice(1);
+
+  const planetData = data.find( item => {
+
+    return name === item.name
+  } );
+
+
   return (
-    <div>PlanetPage</div>
+    <>
+      {planetName}
+      <br />
+      {JSON.stringify(planetData, null, 3)}
+    </>
   )
 }
