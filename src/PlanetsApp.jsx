@@ -1,10 +1,10 @@
-import { Navbar } from './components/Navbar';
+import { AppNavbar } from './components/AppNavbar';
 import { AppRouter } from './router/AppRouter';
 
 export const PlanetsApp = () => {
   return (
     <>
-      <Navbar/>
+      <AppNavbar/>
 
       <AppRouter/>
     </>

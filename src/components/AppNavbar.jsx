@@ -3,7 +3,7 @@ import data from '../data/data.json';
 
 const planets = data.map( planet => planet.name );
 
-export const Navbar = () => {
+export const AppNavbar = () => {
   return (
     <nav>
       <NavLink to='/'>The Planets</NavLink>

@@ -1,6 +1,8 @@
-import { useParams } from 'react-router';
 import data from '../data/data.json';
-import { PlanetRouter } from '../router/PlanetRouter';
+
+import { Outlet, useParams } from 'react-router';
+
+import { PlanetNavbar } from '../components/PlanetNavbar';
 
 export const PlanetPage = () => {
 
@@ -15,11 +17,12 @@ export const PlanetPage = () => {
 
   return (
     <>
+      <PlanetNavbar/>
       {planetName}
       <br />
-      {JSON.stringify(planetData, null, 3)}
+      {planetData.overview.content}
       <br />
-      <PlanetRouter/>
+      <Outlet/>
     </>
   )
 }
