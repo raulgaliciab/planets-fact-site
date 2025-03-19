@@ -22,7 +22,26 @@ export const PlanetPage = () => {
       <br />
       {planetData.overview.content}
       <br />
-      <Outlet/>
+      <Outlet context={planetData}/>
+
+      <section>
+        <div>
+          <span>ROTATION TIME</span>
+          <span>{ planetData.rotation }</span>
+        </div>
+        <div>
+          <span>REVOLUTION TIME</span>
+          <span>{ planetData.revolution }</span>
+        </div>
+        <div>
+          <span>RADIUS </span>
+          <span>{ planetData.radius }</span>
+        </div>
+        <div>
+          <span>AVERAGE TEMP.</span>
+          <span>{ planetData.temperature }</span>
+        </div>
+      </section>
     </>
   )
 }
