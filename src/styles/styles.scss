@@ -1,0 +1,34 @@
+$primary-white: #FFFFFF;
+$primary-black: #070724;
+$grey-dark: #38384F;
+$grey-soft: #838391;
+$primary-turquoise: #419EBB;
+$primary-yellow: #EDA249;
+$primary-purple: #6F2ED6;
+$primary-red: #D83A34;
+$primary-orange: #D14C32;
+$secondary-orange: #CD5120;
+$primary-green: #1EC2A4;
+$primary-blue: #2D68F0;
+
+$title-font: 'Antonio', sans-serif;
+$content-font: 'League Spartan', sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $content-font;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  padding: 1.6rem;
+  color: $primary-white;
+  background-color: $primary-black;
+  background-image: url('/assets/background-stars.svg');
+}
