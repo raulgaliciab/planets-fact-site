@@ -18,10 +18,7 @@ export const PlanetPage = () => {
   return (
     <>
       <PlanetNavbar/>
-      {planetName}
-      <br />
-      {planetData.overview.content}
-      <br />
+
       <Outlet context={planetData}/>
 
       <section>

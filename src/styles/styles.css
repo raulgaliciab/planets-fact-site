@@ -17,4 +17,42 @@ main {
   background-image: url("/assets/background-stars.svg");
 }
 
+/* Burger Menu */
+.burger-icon {
+  position: fixed;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  display: none; /* Oculto momentaneamente */
+  flex-direction: column;
+  z-index: 100;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+
+.menu:target {
+  transform: translateY(0);
+}
+
+/* Planet Navbar */
+.planet-navbar {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #838391;
+  border-bottom: 0.5px solid #838391;
+}
+.planet-navbar a {
+  font-family: "League Spartan", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #838391;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=styles.css.map */

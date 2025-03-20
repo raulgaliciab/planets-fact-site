@@ -7,7 +7,7 @@ export const PlanetDisplay = ({ img, title, content, source }) => {
         src={ img.replace("./", "/") }
         alt={`${title} display`}
       />
-      <h2>{ title }</h2>
+      <h2>{ title.toUpperCase() }</h2>
       <p>{ content }</p>
       <div>
         <span>Source:</span>

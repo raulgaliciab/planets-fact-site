@@ -7,8 +7,8 @@ export const AppNavbar = () => {
   return (
     <nav>
       <NavLink to='/'>THE PLANETS</NavLink>
-      <section>
 
+      <section className='menu' id='menu'>
         {
           planets.map( planet => (
             <NavLink
@@ -18,6 +18,12 @@ export const AppNavbar = () => {
             </NavLink>
           ))
         }
+        <a
+          href="#menu"
+          className='burger-icon'
+        >
+          <img src="/assets/icon-hamburger.svg" alt="Burger Icon" />
+        </a>
       </section>
     </nav>
   )
