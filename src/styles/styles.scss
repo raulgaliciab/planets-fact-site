@@ -28,7 +28,7 @@ html {
 main {
   width: 100vw;
   height: 100vh;
-  padding: 1.6rem;
+  padding: 2.4rem;
   color: $primary-white;
   background-color: $primary-black;
   background-image: url('/assets/background-stars.svg');
@@ -82,4 +82,61 @@ main {
     color: $primary-white;
     border-bottom: 4px solid $primary-blue;
   }
+}
+
+/* Planet Display */
+
+.planet-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 50rem;
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+      img {
+        max-width: 80%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+      }
+  }
+
+  h2 {
+    font-family: $title-font;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .source-container {
+    font-size: 1.4rem;
+    color: $primary-white;
+
+    span {
+      font-weight: 300;
+      margin-right: 0.4rem;
+    }
+
+    a {
+      font-weight: bold;
+      color: $primary-white;
+      margin-right: 0.4rem;
+    }
+  }
+
 }
