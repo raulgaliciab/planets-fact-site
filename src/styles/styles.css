@@ -5,6 +5,7 @@
 }
 
 html {
+  font-size: 62.5%;
   font-family: "League Spartan", sans-serif;
 }
 
@@ -40,7 +41,7 @@ main {
 /* Planet Navbar */
 .planet-navbar {
   width: 100%;
-  height: 3rem;
+  height: 3.6rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -48,11 +49,19 @@ main {
   border-bottom: 0.5px solid #838391;
 }
 .planet-navbar a {
+  display: flex;
+  height: 100%;
+  align-items: center;
   font-family: "League Spartan", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 2px;
   color: #838391;
   text-decoration: none;
+}
+.planet-navbar .active {
+  font-weight: bold;
+  color: #FFFFFF;
+  border-bottom: 4px solid #2D68F0;
 }
 
 /*# sourceMappingURL=styles.css.map */
