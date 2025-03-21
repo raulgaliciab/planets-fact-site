@@ -112,4 +112,27 @@ main {
   margin-right: 0.4rem;
 }
 
+/* Planet Details */
+.planet-details {
+  padding: 2.4rem 0;
+}
+.planet-details .details-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4.8rem;
+  padding: 0 2.4rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #838391;
+}
+.planet-details .details-card .details-title {
+  font-size: 1rem;
+  color: #838391;
+}
+.planet-details .details-card .details-data {
+  font-family: "Antonio", sans-serif;
+  font-size: 2rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
