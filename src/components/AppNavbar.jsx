@@ -5,8 +5,14 @@ const planets = data.map( planet => planet.name );
 
 export const AppNavbar = () => {
   return (
-    <nav>
-      <NavLink to='/'>THE PLANETS</NavLink>
+    <nav className='app-navbar'>
+
+      <NavLink
+        to='/'
+        className='title'
+      >
+        THE PLANETS
+      </NavLink>
 
       <section className='menu' id='menu'>
         {

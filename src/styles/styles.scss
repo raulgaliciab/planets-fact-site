@@ -27,11 +27,28 @@ html {
 
 main {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   padding: 2.4rem;
   color: $primary-white;
   background-color: $primary-black;
   background-image: url('/assets/background-stars.svg');
+}
+
+/* App Navbar */
+
+.app-navbar {
+  display: flex;
+  width: 100%;
+  height: 4.2rem;
+  align-items: center;
+  margin-bottom: 1.6rem;
+
+  .title {
+    font-family: $title-font;
+    font-size: 2.8rem;
+    color: $primary-white;
+    text-decoration: none;
+  }
 }
 
 /* Burger Menu */
@@ -63,7 +80,7 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: 1px solid $grey-soft;
+  border-top: 0.5px solid $grey-soft;
   border-bottom: 0.5px solid $grey-soft;
 
   a {
@@ -92,19 +109,18 @@ main {
   justify-content: center;
   text-align: center;
   width: 100%;
-  height: 50rem;
+  height: auto;
+  margin-top: 2.4rem;
 
   figure {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto;
+    height: 35rem;
 
       img {
-        max-width: 80%;
-        width: auto;
-        height: auto;
         object-fit: contain;
       }
   }
@@ -120,7 +136,7 @@ main {
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 2.2rem;
-    margin-bottom: 1.6rem;
+    margin-bottom: 3.2rem;
   }
 
   .source-container {
@@ -139,6 +155,40 @@ main {
     }
   }
 
+}
+
+/* Planet image size */
+
+.mercury {
+  width: 11.1rem;
+}
+
+.venus {
+  width: 15.4rem;
+}
+
+.earth {
+  width: 17.3rem;
+}
+
+.mars {
+  width: 12.9rem;
+}
+
+.jupiter {
+  width: 22.4rem;
+}
+
+.saturn {
+  width: 25.6rem;
+}
+
+.uranus {
+  width: 17.6rem;
+}
+
+.neptune {
+  width: 17.3rem;
 }
 
 /* Planet Details */

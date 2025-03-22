@@ -7,6 +7,7 @@ export const PlanetDisplay = ({ img, title, content, source }) => {
         <img
           src={ img.replace("./", "/") }
           alt={`${title} display`}
+          className={title.toLowerCase()}
         />
       </figure>
       <h2>{ title.toUpperCase() }</h2>
