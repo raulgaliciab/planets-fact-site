@@ -2,17 +2,20 @@ $primary-white: #FFFFFF;
 $primary-black: #070724;
 $grey-dark: #38384F;
 $grey-soft: #838391;
-$primary-turquoise: #419EBB;
-$primary-yellow: #EDA249;
-$primary-purple: #6F2ED6;
-$primary-red: #D83A34;
-$primary-orange: #D14C32;
-$secondary-orange: #CD5120;
-$primary-green: #1EC2A4;
-$primary-blue: #2D68F0;
 
 $title-font: 'Antonio', sans-serif;
 $content-font: 'League Spartan', sans-serif;
+
+:root {
+  --mercury: #419EBB;
+  --venus: #EDA249;
+  --earth: #6F2ED6;
+  --mars: #D14C32;
+  --jupiter: #D83A34;
+  --saturn: #CD5120;
+  --uranus: #1EC2A4;
+  --neptune: #2D68F0;
+}
 
 * {
   box-sizing: border-box;
@@ -97,7 +100,6 @@ main {
   .active {
     font-weight: bold;
     color: $primary-white;
-    border-bottom: 4px solid $primary-blue;
   }
 }
 
