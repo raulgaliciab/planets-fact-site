@@ -15,21 +15,27 @@ export const AppNavbar = () => {
       </NavLink>
 
       <section className='menu' id='menu'>
-        {
-          planets.map( planet => (
-            <NavLink
-              key={planet.toLowerCase()}
-              to={planet.toLowerCase()}>
-              {planet.toUpperCase()}
-            </NavLink>
-          ))
-        }
-        <a
-          href="#menu"
+
+        <label
           className='burger-icon'
         >
-          <img src="/assets/icon-hamburger.svg" alt="Burger Icon" />
-        </a>
+          <input type="checkbox"/>
+        </label>
+
+        <div className='menu-planets'>
+          {
+            planets.map( planet => (
+              <NavLink
+                key={planet.toLowerCase()}
+                to={planet.toLowerCase()}
+              >
+                <span></span>
+                <p>{planet.toUpperCase()}</p>
+                <img src="/assets/icon-chevron.svg" alt="Arrow" />
+              </NavLink>
+            ))
+          }
+        </div>
       </section>
     </nav>
   )

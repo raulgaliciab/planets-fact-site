@@ -53,9 +53,11 @@ main {
 
 /* App Navbar */
 .app-navbar {
+  position: relative;
   display: flex;
   width: 100%;
   height: 4.2rem;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 1.6rem;
 }
@@ -65,25 +67,59 @@ main {
   color: #FFFFFF;
   text-decoration: none;
 }
+.app-navbar .menu .menu-planets {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  margin-top: 2.8rem;
+  background-color: #070724;
+}
+.app-navbar .menu .menu-planets a {
+  display: flex;
+  align-items: center;
+  height: 7rem;
+  text-decoration: none;
+  border-bottom: 0.5px solid #838391;
+}
+.app-navbar .menu .menu-planets a span {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 2.4rem;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+.app-navbar .menu .menu-planets a p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.app-navbar .menu .menu-planets a img {
+  margin-left: auto;
+}
 
 /* Burger Menu */
 .burger-icon {
-  position: fixed;
-  z-index: 99;
+  display: flex;
+  width: 2.4rem;
+  height: 1.7rem;
   cursor: pointer;
 }
-
-.menu {
-  position: fixed;
-  display: none; /* Oculto momentaneamente */
-  flex-direction: column;
-  z-index: 100;
-  transform: translateY(-100%);
-  transition: transform 0.2s ease;
+.burger-icon input {
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/icon-hamburger.svg");
+  appearance: none;
+  pointer-events: none;
+  transition: opacity 200ms ease-in-out;
+}
+.burger-icon input:checked {
+  opacity: 0.5;
 }
 
-.menu:target {
-  transform: translateY(0);
+.burger-icon:has(input:checked) + .menu-planets {
+  display: flex;
 }
 
 /* Planet Navbar */
