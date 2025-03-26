@@ -1,9 +1,20 @@
-import { NavLink } from 'react-router';
+import { NavLink, useLocation } from 'react-router';
 import data from '../data/data.json';
+import { useEffect, useRef } from 'react';
 
 const planets = data.map( planet => planet.name );
 
 export const AppNavbar = () => {
+
+  const location = useLocation();
+  const checkboxRef = useRef(null);
+
+  useEffect(() => {
+    if (checkboxRef.current) {
+      checkboxRef.current.checked = false;
+    }
+  }, [location.pathname]);
+
   return (
     <nav className='app-navbar'>
 
@@ -19,7 +30,10 @@ export const AppNavbar = () => {
         <label
           className='burger-icon'
         >
-          <input type="checkbox"/>
+          <input
+            type="checkbox"
+            ref={checkboxRef}
+          />
         </label>
 
         <div className='menu-planets'>
