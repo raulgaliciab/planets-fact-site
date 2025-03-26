@@ -87,7 +87,6 @@ main {
   width: 2rem;
   height: 2rem;
   margin-right: 2.4rem;
-  background-color: #FFFFFF;
   border-radius: 50%;
 }
 .app-navbar .menu .menu-planets a p {
@@ -97,6 +96,39 @@ main {
 }
 .app-navbar .menu .menu-planets a img {
   margin-left: auto;
+}
+
+/* Planet color */
+.mercury-span {
+  background-color: var(--mercury);
+}
+
+.venus-span {
+  background-color: var(--venus);
+}
+
+.earth-span {
+  background-color: var(--earth);
+}
+
+.mars-span {
+  background-color: var(--mars);
+}
+
+.jupiter-span {
+  background-color: var(--jupiter);
+}
+
+.saturn-span {
+  background-color: var(--saturn);
+}
+
+.uranus-span {
+  background-color: var(--uranus);
+}
+
+.neptune-span {
+  background-color: var(--neptune);
 }
 
 /* Burger Menu */

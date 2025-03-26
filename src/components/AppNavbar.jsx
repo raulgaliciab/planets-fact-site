@@ -13,6 +13,7 @@ export const AppNavbar = () => {
     if (checkboxRef.current) {
       checkboxRef.current.checked = false;
     }
+
   }, [location.pathname]);
 
   return (
@@ -43,7 +44,10 @@ export const AppNavbar = () => {
                 key={planet.toLowerCase()}
                 to={planet.toLowerCase()}
               >
-                <span></span>
+                <span
+                  className={`${planet.toLowerCase()}-span`}
+                >
+                </span>
                 <p>{planet.toUpperCase()}</p>
                 <img src="/assets/icon-chevron.svg" alt="Arrow" />
               </NavLink>
