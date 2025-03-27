@@ -197,6 +197,10 @@ main {
     letter-spacing: 2px;
     color: $grey-soft;
     text-decoration: none;
+
+    span {
+      display: none;
+    }
   }
 
   .active {

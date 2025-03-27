@@ -52,6 +52,22 @@
   /* Planet Navbar */
   .planet-navbar {
     grid-area: subpages;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+  .planet-navbar a {
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    color: #FFFFFF;
+    border: 0.5px solid #838391;
+  }
+  .planet-navbar a span {
+    margin-right: 2rem;
+    color: #838391;
   }
   /* Planet Details */
   .planet-details {
