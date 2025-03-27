@@ -1,0 +1,101 @@
+$grey-soft: #838391;
+
+@media (min-width: 712px) {
+
+  /* Main */
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "navbar navbar"
+    "img img"
+    "info subpages"
+    "details details";
+  }
+
+  /* App Navbar */
+
+  .app-navbar {
+    position: static;
+    grid-area: navbar;
+    flex-direction: column;
+    width: 100%;
+    height: 10rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.5px solid $grey-soft;
+
+    .menu {
+      width: 100%;
+
+      .menu-planets {
+        position: static;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        padding: 0 1rem;
+        justify-content: space-between;
+
+        a {
+          height: auto;
+          border-bottom: none;
+
+          p {
+            font-size: 1.1rem;
+            color: $grey-soft;
+          }
+
+          span, img {
+            display: none;
+          }
+        }
+      }
+    }
+
+  }
+
+  /* Burger Menu */
+
+  .burger-icon {
+    display: none;
+  }
+
+  /* Planet Display */
+
+  .planet-display {
+    figure {
+      grid-area: img;
+    }
+
+    .planet-info {
+      grid-area: info;
+    }
+  }
+
+  /* Planet Navbar */
+
+  .planet-navbar {
+    grid-area: subpages;
+  }
+
+  /* Planet Details */
+
+  .planet-details {
+    grid-area: details;
+    display: flex;
+    justify-content: space-between;
+
+    .details-card {
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      max-width: 16.4rem;
+      height: 8.8rem;
+
+      .details-title {
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+}

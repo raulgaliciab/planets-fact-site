@@ -1,0 +1,74 @@
+@media (min-width: 712px) {
+  /* Main */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "navbar navbar" "img img" "info subpages" "details details";
+  }
+  /* App Navbar */
+  .app-navbar {
+    position: static;
+    grid-area: navbar;
+    flex-direction: column;
+    width: 100%;
+    height: 10rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.5px solid #838391;
+  }
+  .app-navbar .menu {
+    width: 100%;
+  }
+  .app-navbar .menu .menu-planets {
+    position: static;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    padding: 0 1rem;
+    justify-content: space-between;
+  }
+  .app-navbar .menu .menu-planets a {
+    height: auto;
+    border-bottom: none;
+  }
+  .app-navbar .menu .menu-planets a p {
+    font-size: 1.1rem;
+    color: #838391;
+  }
+  .app-navbar .menu .menu-planets a span, .app-navbar .menu .menu-planets a img {
+    display: none;
+  }
+  /* Burger Menu */
+  .burger-icon {
+    display: none;
+  }
+  /* Planet Display */
+  .planet-display figure {
+    grid-area: img;
+  }
+  .planet-display .planet-info {
+    grid-area: info;
+  }
+  /* Planet Navbar */
+  .planet-navbar {
+    grid-area: subpages;
+  }
+  /* Planet Details */
+  .planet-details {
+    grid-area: details;
+    display: flex;
+    justify-content: space-between;
+  }
+  .planet-details .details-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    max-width: 16.4rem;
+    height: 8.8rem;
+  }
+  .planet-details .details-card .details-title {
+    margin-bottom: 0.8rem;
+  }
+}
+
+/*# sourceMappingURL=tablet.css.map */
