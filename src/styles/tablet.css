@@ -75,11 +75,15 @@
     padding-left: 2rem;
     color: #FFFFFF;
     border: 0.5px solid #838391;
+    transition: background-color 0.4s;
   }
   .planet-navbar a span {
     display: flex;
     margin-right: 2rem;
     color: #838391;
+  }
+  .planet-navbar a:hover {
+    background-color: #38384F;
   }
   /* Planet Details */
   .planet-details {

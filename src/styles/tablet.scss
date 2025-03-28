@@ -1,4 +1,5 @@
 $primary-white: #FFFFFF;
+$grey-dark: #38384F;
 $grey-soft: #838391;
 
 @media (min-width: 712px) {
@@ -101,12 +102,17 @@ $grey-soft: #838391;
       padding-left: 2rem;
       color: $primary-white;
       border: 0.5px solid $grey-soft;
+      transition: background-color 0.4s;
 
       span {
         display: flex;
         margin-right: 2rem;
         color: $grey-soft;
       }
+    }
+
+    a:hover {
+      background-color: $grey-dark;
     }
   }
 
