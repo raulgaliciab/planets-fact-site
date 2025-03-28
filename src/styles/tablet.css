@@ -5,6 +5,10 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "navbar navbar" "img img" "info subpages" "details details";
   }
+  /* Home Page */
+  .home-page {
+    grid-area: img;
+  }
   /* App Navbar */
   .app-navbar {
     position: static;
