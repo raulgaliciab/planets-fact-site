@@ -2,16 +2,18 @@ export const PlanetDisplay = ({ img, title, content, source }) => {
 
 
   return (
-    <section className="planet-display">
-      <figure>
-        <img
-          src={ img.replace("./", "/") }
-          alt={`${title} display`}
-          className={title.toLowerCase()}
-        />
-      </figure>
+    <>
+      <section className="planet-img">
+        <figure>
+          <img
+            src={ img.replace("./", "/") }
+            alt={`${title} display`}
+            className={title.toLowerCase()}
+          />
+        </figure>
 
-      <div className="planet-info">
+      </section>
+      <section className="planet-info">
         <h2>{ title.toUpperCase() }</h2>
         <p>{ content }</p>
 
@@ -20,7 +22,7 @@ export const PlanetDisplay = ({ img, title, content, source }) => {
           <a href={ source } >Wikipedia</a>
           <img src="/assets/icon-source.svg" alt="Arrow Icon" />
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }

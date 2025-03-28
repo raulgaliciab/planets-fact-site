@@ -211,7 +211,7 @@ main {
 
 /* Planet Display */
 
-.planet-display {
+.planet-img {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -232,6 +232,13 @@ main {
         object-fit: contain;
       }
   }
+}
+
+.planet-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 
   h2 {
     font-family: $title-font;
@@ -262,9 +269,7 @@ main {
       margin-right: 0.4rem;
     }
   }
-
 }
-
 /* Planet image size */
 
 .mercury {

@@ -4,6 +4,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "navbar navbar" "img img" "info subpages" "details details";
+    column-gap: 5rem;
+    height: 100vh;
+    padding: 3.2rem;
   }
   /* Home Page */
   .home-page {
@@ -47,11 +50,12 @@
     display: none;
   }
   /* Planet Display */
-  .planet-display figure {
+  .planet-img {
     grid-area: img;
   }
-  .planet-display .planet-info {
+  .planet-info {
     grid-area: info;
+    text-align: start;
   }
   /* Planet Navbar */
   .planet-navbar {
