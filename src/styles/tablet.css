@@ -39,8 +39,11 @@
     border-bottom: none;
   }
   .app-navbar .menu .menu-planets a p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #838391;
+  }
+  .app-navbar .menu .menu-planets a.active p {
+    color: #FFFFFF;
   }
   .app-navbar .menu .menu-planets a span, .app-navbar .menu .menu-planets a img {
     display: none;

@@ -52,10 +52,13 @@ $grey-soft: #838391;
           border-bottom: none;
 
           p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             color: $grey-soft;
           }
 
+          &.active p {
+            color: $primary-white;
+          }
           span, img {
             display: none;
           }
