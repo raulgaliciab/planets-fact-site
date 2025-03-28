@@ -4,6 +4,11 @@
     grid-template-areas: "navbar navbar" "img info" "img subpages" "details details";
     height: auto;
   }
+  /* Home Page */
+  .home-page {
+    grid-column: 1/3;
+    grid-row: 2/4;
+  }
   /* App Navbar */
   .app-navbar {
     flex-direction: row;

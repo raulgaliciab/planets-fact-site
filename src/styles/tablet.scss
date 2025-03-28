@@ -23,6 +23,8 @@ $grey-soft: #838391;
 
   .home-page {
     grid-area: img;
+    justify-content: start;
+    margin-top: 5rem;
   }
 
   /* App Navbar */

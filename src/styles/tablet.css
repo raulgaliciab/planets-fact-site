@@ -11,6 +11,8 @@
   /* Home Page */
   .home-page {
     grid-area: img;
+    justify-content: start;
+    margin-top: 5rem;
   }
   /* App Navbar */
   .app-navbar {
