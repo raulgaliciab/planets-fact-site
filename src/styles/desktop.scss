@@ -1,9 +1,21 @@
 @media (min-width: 1020px) {
 
+  /* Main */
+
+  main {
+    grid-template-areas:
+      "navbar navbar"
+      "img info"
+      "img subpages"
+      "details details";
+      height: auto;
+  }
+
   /* App Navbar */
   .app-navbar {
     flex-direction: row;
     height: 8rem;
+    margin-bottom: 6rem;
 
     .menu {
       width: auto;
@@ -14,6 +26,90 @@
         p {
           font-size: 1.6rem;
         }
+      }
+    }
+  }
+
+  /* Planet Navbar */
+
+  .planet-navbar {
+    max-width: 30rem;
+    max-height: 17rem;
+    height: auto;
+    margin-top: 4rem;
+    justify-self: center;
+
+    a {
+      font-size: 1.2rem;
+    }
+  }
+
+  /* Planet Display */
+
+  .planet-img {
+    figure {
+      height: auto;
+    }
+  }
+
+  .planet-info {
+    max-width: 30rem;
+    justify-self: center;
+    h2 {
+      font-size: 8rem;
+    }
+  }
+
+  /* Planet image size */
+
+  .mercury {
+    width: 18.4rem;
+  }
+
+  .venus {
+    width: 25.3rem;
+  }
+
+  .earth {
+    width: 28.5rem;
+  }
+
+  .mars {
+    width: 21.3rem;
+  }
+
+  .jupiter {
+    width: 36.9rem;
+  }
+
+  .saturn {
+    width: 42.2rem;
+  }
+
+  .uranus {
+    width: 29rem;
+  }
+
+  .neptune {
+    width: 28.5rem;
+  }
+
+  /* Planet Details */
+
+  .planet-details {
+    justify-content: space-around;
+
+    .details-card {
+      max-width: none;
+      width: 25.5rem;
+      height: 12.8rem;
+
+      .details-title {
+        font-size: 1.1rem;
+      }
+
+      .details-data {
+        font-size: 4rem;
       }
     }
   }

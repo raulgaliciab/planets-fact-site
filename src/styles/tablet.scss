@@ -103,6 +103,7 @@ $grey-soft: #838391;
       border: 0.5px solid $grey-soft;
 
       span {
+        display: flex;
         margin-right: 2rem;
         color: $grey-soft;
       }
