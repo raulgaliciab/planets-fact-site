@@ -5,7 +5,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "navbar navbar" "img img" "info subpages" "details details";
     column-gap: 5rem;
-    height: 100vh;
+    height: auto;
+    min-height: 1024px;
     padding: 3.2rem;
   }
   /* Home Page */

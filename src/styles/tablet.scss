@@ -15,7 +15,8 @@ $grey-soft: #838391;
     "info subpages"
     "details details";
     column-gap: 5rem;
-    height: 100vh;
+    height: auto;
+    min-height: 1024px;
     padding: 3.2rem;
   }
 
