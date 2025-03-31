@@ -1,10 +1,4 @@
-$primary-white: #FFFFFF;
-$primary-black: #070724;
-$grey-dark: #38384F;
-$grey-soft: #838391;
-
-$title-font: 'Antonio', sans-serif;
-$content-font: 'League Spartan', sans-serif;
+@use "variables";
 
 :root {
   --mercury: #419EBB;
@@ -25,15 +19,15 @@ $content-font: 'League Spartan', sans-serif;
 
 html {
   font-size: 62.5%;
-  font-family: $content-font;
+  font-family: variables.$content-font;
 }
 
 main {
   width: 100vw;
   height: 100%;
   padding: 2.4rem;
-  color: $primary-white;
-  background-color: $primary-black;
+  color: variables.$primary-white;
+  background-color: variables.$primary-black;
   background-image: url('/assets/background-stars.svg');
 }
 
@@ -48,7 +42,7 @@ main {
   height: 100vh;
 
   h2 {
-      font-family: $title-font;
+      font-family: variables.$title-font;
       font-size: 3.2rem;
       font-weight: 600;
       margin-bottom: 2.4rem;
@@ -74,9 +68,9 @@ main {
   margin-bottom: 1.6rem;
 
   .title {
-    font-family: $title-font;
+    font-family: variables.$title-font;
     font-size: 2.8rem;
-    color: $primary-white;
+    color: variables.$primary-white;
     text-decoration: none;
   }
 
@@ -87,14 +81,14 @@ main {
     display: none;
     flex-direction: column;
     margin-top: 2.8rem;
-    background-color: $primary-black;
+    background-color: variables.$primary-black;
 
     a {
       display: flex;
       align-items: center;
       height: 7rem;
       text-decoration: none;
-      border-bottom: 0.5px solid $grey-soft;
+      border-bottom: 0.5px solid variables.$grey-soft;
 
       span {
         width: 2rem;
@@ -106,7 +100,7 @@ main {
       p {
         font-size: 1.5rem;
         font-weight: bold;
-        color: $primary-white;
+        color: variables.$primary-white;
       }
 
       img {
@@ -185,17 +179,17 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: 0.5px solid $grey-soft;
-  border-bottom: 0.5px solid $grey-soft;
+  border-top: 0.5px solid variables.$grey-soft;
+  border-bottom: 0.5px solid variables.$grey-soft;
 
   a {
     display: flex;
     height: 100%;
     align-items: center;
-    font-family: $content-font;
+    font-family: variables.$content-font;
     font-size: 0.9rem;
     letter-spacing: 2px;
-    color: $grey-soft;
+    color: variables.$grey-soft;
     text-decoration: none;
 
     span {
@@ -205,7 +199,7 @@ main {
 
   .active {
     font-weight: bold;
-    color: $primary-white;
+    color: variables.$primary-white;
   }
 }
 
@@ -241,7 +235,7 @@ main {
   text-align: center;
 
   h2 {
-    font-family: $title-font;
+    font-family: variables.$title-font;
     font-size: 4rem;
     font-weight: 600;
     margin-bottom: 1.6rem;
@@ -256,7 +250,7 @@ main {
 
   .source-container {
     font-size: 1.4rem;
-    color: $primary-white;
+    color: variables.$primary-white;
 
     span {
       font-weight: 300;
@@ -265,7 +259,7 @@ main {
 
     a {
       font-weight: bold;
-      color: $primary-white;
+      color: variables.$primary-white;
       margin-right: 0.4rem;
     }
   }
@@ -318,15 +312,15 @@ main {
     height: 4.8rem;
     padding: 0 2.4rem;
     margin-bottom: 0.8rem;
-    border: 1px solid $grey-soft;
+    border: 1px solid variables.$grey-soft;
 
     .details-title {
       font-size: 1rem;
-      color: $grey-soft;
+      color: variables.$grey-soft;
     }
 
     .details-data {
-      font-family: $title-font;
+      font-family: variables.$title-font;
       font-size: 2rem;
     }
   }

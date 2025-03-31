@@ -1,6 +1,4 @@
-$primary-white: #FFFFFF;
-$grey-dark: #38384F;
-$grey-soft: #838391;
+@use "variables";
 
 @media (min-width: 712px) {
 
@@ -37,7 +35,7 @@ $grey-soft: #838391;
     width: 100%;
     height: 10rem;
     padding-bottom: 2rem;
-    border-bottom: 0.5px solid $grey-soft;
+    border-bottom: 0.5px solid variables.$grey-soft;
 
     .menu {
       width: 100%;
@@ -57,11 +55,11 @@ $grey-soft: #838391;
 
           p {
             font-size: 1.2rem;
-            color: $grey-soft;
+            color: variables.$grey-soft;
           }
 
           &.active p {
-            color: $primary-white;
+            color: variables.$primary-white;
           }
           span, img {
             display: none;
@@ -103,19 +101,19 @@ $grey-soft: #838391;
       height: 4rem;
       margin-bottom: 2rem;
       padding-left: 2rem;
-      color: $primary-white;
-      border: 0.5px solid $grey-soft;
+      color: variables.$primary-white;
+      border: 0.5px solid variables.$grey-soft;
       transition: background-color 0.4s;
 
       span {
         display: flex;
         margin-right: 2rem;
-        color: $grey-soft;
+        color: variables.$grey-soft;
       }
     }
 
     a:hover {
-      background-color: $grey-dark;
+      background-color: variables.$grey-dark;
     }
   }
 
